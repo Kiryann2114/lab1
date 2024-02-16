@@ -3,14 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Lab1</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="light.css" id="style">
 </head>
-<body>
-<form action="123.php" method="get">
-    <label>
-        Продукт
-        <input type="text" name="searchText">
-    </label>
-    <input type="submit" name="searchSubmit" value="Поиск">
-</form>
+<body class="body">
+    <div class="formareg">
+        <form action="lab1.php" method="POST">
+            <div class="ent">
+                <div>
+                    <input type="text" autocomplete="off" placeholder="Логин" name="loginEntrance" class="inptext"/>
+                </div>
+                <div>
+                    <input type="password" autocomplete="off" placeholder="Пароль" name="passwordEntrance" class="inptext"/>
+                </div>
+                <div>
+                    <input type="submit" name="entrance" value="Войти" class="inpButton"/>
+                </div>
+            </div>
+        </form>
+        <form action="lab1.php" method="POST" id="regForm">
+            <div class="reg">
+                <div>
+                    <input type="text" autocomplete="off" placeholder="Имя" name="name" class="inptext"/>
+                </div>
+                <div>
+                    <input type="text" autocomplete="off" placeholder="Фамилия" name="surname" class="inptext"/>
+                </div>
+                <div>
+                    <input type="text" autocomplete="off" placeholder="E-mail" name="mail" class="inptext"/>
+                </div>
+                <div>
+                    <input type="text" autocomplete="off" placeholder="Логин" name="login" class="inptext"/>
+                </div>
+                <div>
+                    <input type="text" autocomplete="off" placeholder="Пароль" name="password" class="inptext"/>
+                </div>
+                <div>
+                    <input type="password" autocomplete="off" placeholder="Подтверждение Пароля" name="passwordСonfirm" class="inptext"/>
+                </div>
+                <div>
+                    <input type="checkbox" autocomplete="off" class="inpCheck" name="agreement" checked>
+                    <lable class="Lb">Принимаю правила</lable>
+                </div>
+                <div>
+                    <select name="vozr" class="inpSel">
+                        <option value="1">Есть 18</option>
+                        <option value="0">Нет 18</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="Lb">Ваш пол:</label><br>
+                    <form>
+                        <input type="radio" name="gender" value="0" class="inpRadio" checked>
+                        <label class="Lb">Женский</label><br>
+                        <input type="radio" name="gender" value="1" class="inpRadio">
+                        <label class="Lb">Мужской</label><br>
+                    </form>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                <div>
+                    <input type="hidden" name="tembol" value="0" />
+                    <input type="button" name="tem" value="Тёмная тема" class="inpButton"/>
+                </div>
+                <div>
+                    <input type="button" name="register" value="Зарегистрироваться" class="inpButton"/>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,62 @@
+.body{
+    background: white;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.bodyPriv{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.formareg{
+    display: flex;
+    flex-direction: row;
+    grid-gap:15vw;
+}
+.reg{
+    display: flex;
+    flex-direction: column;
+    grid-gap:20px;
+}
+.ent{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-gap:20px;
+}
+.inpButton{
+    height: 40px;
+    width: 310px;
+}
+.inpCheck{
+    height: 15px;
+    width: 15px;
+}
+.inpRadio{
+    height: 15px;
+    width: 15px;
+}
+.inpSel{
+    height: 25px;
+    width: 100px;
+}
+.inptext{
+    height: 25px;
+    width: 300px;
+}
+.Prov{
+    color: red;
+}
+.LbPriv{
+    font-size: 40px;
+}
+.Priv{
+    display: flex;
+    flex-direction: column;
+    grid-gap:20px;
+    align-items: center;
+    justify-content: center
+}
